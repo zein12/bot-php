@@ -26,8 +26,8 @@ class BotRepository
     public function __construct(Images $image)
     {
         $this->image = $image;
-        $this->client = new CurlHTTPClient(env('LINE_BOT_ACCESS_TOKEN'));
-        $this->bot = new LINEBot($this->client, ['channelSecret' => env('LINE_BOT_SECRET')]);
+        $this->client = new CurlHTTPClient(env('3/cEBpOR0mjAMUtnHKrSrx3N6FnMVNPYfXBIwMO6HNGaljxuxTxZz2fGrmZYFwqfV3dvAWMa7FEGrmOONfbZ7or1wxYgpjbtFMS0Mkk+RftjvYSrUpThxAHGiivf2M662z2zM5P8BSKby0dJiBG3GQdB04t89/1O/w1cDnyilFU='));
+        $this->bot = new LINEBot($this->client, ['channelSecret' => env('a6b4b1a80d9f25eb0a719fc92cef7d86')]);
     }
     
     public function replyMsg($replyToken,$msgResponse, $isMedia = false){
